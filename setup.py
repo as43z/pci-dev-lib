@@ -3,17 +3,24 @@
 from setuptools import setup
 import pathlib
 
-# **** Long-description ****
+# **** Metas ****
 # Where am i
 curr_dir = pathlib.Path(__file__).parent.resolve()
+meta_dir = (curr_dir / "pcidevlib/meta")
 # Description from the README.md
 long_description = (curr_dir / "README.md").read_text(encoding="utf-8")
+# Name
+name = (meta_dir / "pname").read_text(encoding="utf-8")
+# Version
+version = (meta_dir / "version").read_text(encoding="utf-8")
+# Description
+description = (meta_dir / "description").read_text(encoding="utf-8")
 
 # **** SETUP ****
 setup(
-	name="pcidevlib",
-	version="0.1.dev2",
-	description="Custom PCI device utils for reading writing.",
+	name=name,
+	version=version,
+	description=description,
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url="https://github.com/as43z/pci-dev-lib",
@@ -30,7 +37,7 @@ setup(
 	python_requires=">=3.7, <4",
 	# Package
 	packages=[
-		"src"
+		name
 	],
 	project_urls={
 		"Source Code": "https://github.com/as43z/pci-dev-lib"

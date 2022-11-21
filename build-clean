@@ -1,0 +1,3 @@
+build/
+dist/
+pcidevlib.egg-info/
