@@ -8,13 +8,13 @@ from BCM43XX devices.
 Library won't work for any other type of devices (PCIe, ...) only for PCI, as are the Network
 devices from the Broadcom BCM43XX chipsets.
 
-## Contributing
+## Contributing
 
 Right now I don't have the intention of accepting PRs from outside the people working in this project. (Me and my professors for the moment I guess 😬).
 
 If anything, feel free to contact me.
 
-## Contact Point
+## Contact Point
 
 Albert Sáez <[albert.saez.nunez@estudiantat.upc.edu](mailto:albert.saez.nunez@estudiantat.upc.edu)>
 
